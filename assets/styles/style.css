@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.523), transparent), url(/assets/image/hero.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+header .nav-wrapper {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header nav {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo img {
+  height: 75px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-basis: 25%;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #EE6129;
+}
+header nav ul a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul a::after {
+  content: "";
+  width: 80%;
+  background-color: #EE6129;
+  height: 3px;
+  border-radius: 3px;
+  margin: auto;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-200%) scale(0);
+  opacity: 0;
+}
+header nav ul a:hover::after,
+header nav ul a:active::after {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+header nav ul li.contacts a::after {
+  content: "";
+}
+header nav ul li.contacts a {
+  background-color: #EE6129;
+  color: white;
+  padding: 8px 16px;
+  display: block;
+  border-radius: 25px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+header nav ul li.contacts a:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+header .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+  height: 100%;
+}
+header .hero a.btn {
+  background-color: #EE6129;
+  color: white;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+header .hero a.btn:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+main #foodList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  gap: 16px;
+  justify-content: space-between;
+}
+main #foodList .food-item {
+  flex-basis: 30%;
+  flex: 1;
+  min-width: 300px;
+}
+main #foodList .food-item img {
+  width: 100%;
+}
+
+aside {
+  margin-top: 32px;
+}
+aside .profile-wrapper {
+  display: flex;
+}
+aside .profile {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+aside .profile img {
+  flex-basis: 25%;
+  width: 100%;
+  max-width: 300px;
+}
+aside form {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  row-gap: 16px;
+  margin: 16px auto;
+}
+aside form input,
+aside form textarea {
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+aside form textarea {
+  padding-bottom: 64px;
+}
+aside form input:focus-visible, aside form textarea:focus-visible {
+  border-bottom: 3px solid #EE6129;
+}
+aside form input[type=submit] {
+  background-color: #EE6129;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+aside form input[type=submit]:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+aside form input[type=submit]:active {
+  box-shadow: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
