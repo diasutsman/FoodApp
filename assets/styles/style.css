@@ -127,8 +127,8 @@ main #foodList {
 }
 main #foodList .food-item {
 	flex-basis: 30%;
-	flex: 1;
 	min-width: 300px;
+	flex: 1;
 }
 main #foodList .food-item img {
 	width: 100%;
