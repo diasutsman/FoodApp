@@ -4,7 +4,6 @@ const cover = document.querySelector('.cover')
 
 menuBurger.addEventListener('click', () => {
     nav.classList.toggle('slide')
-    document.body.classList.toggle('stay')
     cover.classList.toggle('show')
 });
 
