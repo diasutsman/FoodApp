@@ -22,20 +22,17 @@ header {
 	background-size: cover;
 	height: 100vh;
 }
-header .nav-wrapper {
-	background-color: white;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-}
 header nav {
-	max-width: 1000px;
 	padding: 0 16px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 header nav .logo img {
 	height: 75px;
