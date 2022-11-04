@@ -18,7 +18,7 @@ html {
 
 header {
 	background: linear-gradient(rgba(0, 0, 0, 0.523), transparent),
-		url(/assets/image/hero.jpg);
+		url(../image/hero.jpg);
 	background-size: cover;
 	height: 100vh;
 }
